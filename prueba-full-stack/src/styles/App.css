@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Sofia&display=swap');
+
+
+.inst{
+  background-color: #e7e6e2;
+  color: #868584;
+  padding: 1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.inst hr{
+  height: 2px;
+  
+}
+
+.foo{
+  text-align: start;
+  padding: 1rem;
+}
+
+.foo h5{
+  font-weight: 700;
+  padding-bottom: .5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.foo a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: black;
+}
+
+.foo a:hover{
+ color: #868584;
+}
+
+
+.foo ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.foo li{
+  text-align: start;
+}
+
+.promo{
+  text-align: center;
+  background-color: #7a4a58;
+  padding: .25rem;
+  color: white;
+}
+
+.menu1{
+  text-align: end;
+  height: 1.75rem;
+  padding-right: 5.5rem;
+  background-color: #c8c6cb;
+}
+
+.menu1 a{
+  text-decoration: none;
+  color: #818082;
+}
+
+.menu1  a:hover {
+  color: white;
+  background-color: #707070;
+  padding: 1px 5px 6px 5px;
+  border-radius: 5px;
+}
+
+.menu1 ul{
+  list-style: none;
+}
+
+.menu1 li{
+  display: inline;
+  padding: 0 5px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -13,6 +13,25 @@
   
 }
 
+svg{
+  color: #868584;
+  margin: 0 auto;
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.barra1{
+  width: 8rem;
+  margin: 1rem auto;
+  padding: .10rem;
+}
+
+
+
+svg:hover{
+  color: black;
+}
+
 .foo{
   text-align: start;
   padding: 1rem;
@@ -49,7 +68,7 @@
 .promo{
   text-align: center;
   background-color: #7a4a58;
-  padding: .25rem;
+  padding: .5rem;
   color: white;
 }
 

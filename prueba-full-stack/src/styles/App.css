@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Sofia&display=swap');
 
+.inputbus{
+  width: auto;
+margin: 0 5rem 0 15rem;
+padding: 1rem 0 0 0;
+}
+
+.logo{
+  background-color: #282c34;
+  margin: 0.5rem 27.5rem 0 0;
+  width: 8rem;
+  height: 5rem;
+}
 
 .inst{
   background-color: #e7e6e2;
@@ -8,12 +20,18 @@
   font-family: 'Playfair Display', serif;
 }
 
+.envgra{
+  color:#7a4a58;
+  margin: 0 0 0 6rem;
+  width: auto;
+}
+
 .inst hr{
   height: 2px;
   
 }
 
-svg{
+.inst svg{
   color: #868584;
   margin: 0 auto;
   width: 5rem;
@@ -32,7 +50,7 @@ svg{
   height: 100%;
 }
 
-svg:hover{
+.inst svg:hover{
   color: black;
 }
 
@@ -79,19 +97,19 @@ svg:hover{
 .menu1{
   text-align: end;
   height: 1.75rem;
-  padding-right: 5.5rem;
+  padding-right: 5rem;
   background-color: #c8c6cb;
 }
 
 .menu1 a{
   text-decoration: none;
   color: #818082;
+  padding: 2px 3px 7px 3px;
 }
 
 .menu1  a:hover {
   color: white;
   background-color: #707070;
-  padding: 1px 5px 6px 5px;
   border-radius: 5px;
 }
 
@@ -99,9 +117,53 @@ svg:hover{
   list-style: none;
 }
 
+.contenedor{
+  display:flex;
+}
+
+.contenedor1{
+  width: 50%;
+}
+
+.contenedor2{
+  width: 50%;
+}
+
+
 .menu1 li{
   display: inline;
   padding: 0 5px;
+}
+
+.menu2{
+  font-family: 'Playfair Display', serif;
+  text-align: start;
+  margin: 0rem 0 1rem 0rem;
+  padding: 1rem 0 0 0;
+  height: 2rem;
+  font-size: 1.20rem;
+
+}
+
+.menu2 a{
+  text-decoration: none;
+  color: black;  
+  padding: 0 1rem;
+}
+
+.menu2  a:hover {
+  color: black;
+  background-color: #c8c6cb;
+  border-radius: 5px;
+}
+
+.menu2 ul{
+  list-style: none;
+  padding-right: 10rem;
+}
+
+.menu2 li{
+  display: inline;
 }
 
 .App {

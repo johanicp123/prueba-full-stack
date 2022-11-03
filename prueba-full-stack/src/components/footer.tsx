@@ -76,6 +76,31 @@ const Footer = () => {
           <div className="col-6 col-md-3 foo">
             <h5>NEWSLETTER</h5>
             <h6>Registrate para ser el primer en recibir nuestras noticias</h6>
+
+            <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="E-mail"
+              ></input>
+              <div className="input-group-append">
+                <button className="btn btn-outline-secondary" type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-arrow-right botonco"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

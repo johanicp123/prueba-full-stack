@@ -1,11 +1,12 @@
-import React from "react";
+import pagos1 from "../assets/img/footer1.png";
+import pagos2 from "../assets/img/footer2.png";
 
 const Footer = () => {
   return (
     <>
       <div className="inst">
         <h1>@HUSHPUPPIESCO</h1>
-        <hr className="barra1"/>
+        <hr className="barra1" />
         <a href="https://www.facebook.com/" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +79,17 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="barra2"/>
+      <hr className="barra2" />
+      <div className="container mb-3">
+        <div className="row">
+          <div className="col-12 col-md-6">
+            <img className="imgf" src={pagos2} alt="footer metodos" />
+          </div>
+          <div className="col-12 col-md-6">
+            <img className="imgf" src={pagos1} alt="footer metodos" />
+          </div>
+        </div>
+      </div>
     </>
   );
 };

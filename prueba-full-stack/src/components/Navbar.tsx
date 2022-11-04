@@ -31,16 +31,20 @@ export default Navbar;
 
 const NavContainer = styled.nav`
   a {
-    color: white;
+    font-family:'Playfair Display', serif;
+    color: #707070;
     font-weight: 400;
     margin-right: 1rem;
     text-decoration: none;
   }
   padding: 0.4rem;
-  background-color: #333;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  
+  
 
   .links {
     position: absolute;
@@ -52,17 +56,20 @@ const NavContainer = styled.nav`
     text-align: center;
     transition: all .5s ease;
     a {
-      color: white;
+      color: #707070;
       font-size: 1.5rem;
       display: block;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 600px) {
       position: initial;
-      margin: 0;
+      margin: 2.5rem 0 0 0;
       a {
-        font-size: 1.3rem;
-        color: white;
+        font-size: .75rem;
+        color: #707070;
         display: inline;
+      }
+      a:first-child {
+      margin-left:1.75rem; 
       }
       display:block;
     }
@@ -86,7 +93,10 @@ const NavContainer = styled.nav`
   }
 
   .burguer {
-    @media (min-width: 768px) {
+    @media (max-width: 600px) {
+      margin:.5rem 5rem 0 0;
+    }
+    @media (min-width: 600px) {
       display: none;
     }
   }

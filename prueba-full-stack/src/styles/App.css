@@ -21,9 +21,13 @@ padding: 1rem 0 0 0;
 }
 
 .carritoco{
-  margin: 0 0 0 6rem;
+  margin: 0 0 0rem 6rem;
   width: auto;
 }
+
+
+
+
 
 .envgra{
   color:#7a4a58;
@@ -184,7 +188,12 @@ padding: 1rem 0 0 0;
 
 @media only screen and (max-width: 600px) {
   
-
+.carritologo {
+  margin-bottom: .5rem;
+  color:#707070 ;
+  width: 2rem;
+  height: 2rem;
+}
   
 .menu1{
   text-align: center;
@@ -196,7 +205,8 @@ padding: 1rem 0 0 0;
 
 .logo{
   background-color: #282c34;
-  margin: 0.5rem 5rem 0 0;
+  margin: 1rem 5rem 0 0;
+  padding:0;
   width: 5rem;
   height: 3rem;
 }
@@ -208,7 +218,7 @@ padding: 1rem 0 0 0;
 }
 
 .envgra{
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .envgra h6{
@@ -241,10 +251,54 @@ padding: 1rem 0 0 0;
 
   
 }
+
+
+@media only screen and (min-width: 600px) {
+  
+.carritologo {
+  margin-left: 3.5rem;
+  margin-bottom: .5rem;
+  color:#707070 ;
+  width: 2rem;
+  height: 2rem;
+}
+  
+.menu1{
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+  font-size: .7rem;
+}
+
+
+.logo{
+  background-color: #282c34;
+  margin: 1.75rem 10rem 0 0;
+  padding:0;
+  width: 7rem;
+  height: 3rem;
+}
+
+.inputbus{
+  width: 15rem;
+  margin: 0 0rem 0 4rem;
+  padding: 1rem 1rem 0 0;
+}
+
+.envgra{
+  margin: 1rem 0 1rem 6rem;
+  width: 10rem;
+}
+
+.envgra h6{
+ font-size: .7rem;
+ padding: 0;
+}
+
+
+  
+}
 /*
-
-@media only screen and (min-width: 600px) {...}
-
 
 @media only screen and (min-width: 768px) {...}
 

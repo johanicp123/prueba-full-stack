@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/img/12.jpg";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -20,31 +21,18 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
       <div className="contenedor">
         <div className="contenedor1">
           <div>
-            <img className="logo" src={Logo} alt="logo" />
+            <a href="/"><img className="logo" src={Logo} alt="logo" /></a>
           </div>
-          <div className="menu2">
-            <ul>
-              <li>
-                <a href="/">HOMBRE</a>
-              </li>
-              <li>
-                <a href="/">MUJER</a>
-              </li>
-              <li>
-                <a href="/">BLOG</a>
-              </li>
-              <li>
-                <a href="/">HISTORIA</a>
-              </li>
-              <li>
-                <a href="/">TIENDAS</a>
-              </li>
-            </ul>
+
+          <div>
+            <Navbar />
           </div>
         </div>
+
         <div className="contenedor2">
           <div className="input-group mb-3 inputbus">
             <input
@@ -67,10 +55,25 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <h6 className="envgra">
-            ENVIOS GRATIS PARA PEDIDOS SUPERIORES A $300.000
-          </h6>
-          <h6>carrito</h6>
+          <div className="envgra">
+            <h6>ENVIOS GRATIS PARA PEDIDOS SUPERIORES A $300.000</h6>
+          </div>
+          <div className="carritocom">
+            <a href="/">
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-bag"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+              </svg>
+            </a>
+            <h6>Carrito</h6>
+          </div>
         </div>
       </div>
     </>

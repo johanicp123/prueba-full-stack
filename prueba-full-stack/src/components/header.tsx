@@ -1,6 +1,9 @@
 import React from "react";
 import Logo from "../assets/img/12.jpg";
-import Navbar from "./Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Header = () => {
   return (
@@ -25,11 +28,25 @@ const Header = () => {
       <div className="contenedor">
         <div className="contenedor1">
           <div>
-            <a href="/"><img className="logo" src={Logo} alt="logo" /></a>
+            <a href="/">
+              <img className="logo" src={Logo} alt="logo" />
+            </a>
           </div>
-
           <div>
-            <Navbar />
+            <Navbar bg="white" expand="md" className=" mt-3 letranav"  >
+              <Container >
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav" >
+                  <Nav className="me-auto">
+                    <Nav.Link href="/">MUJER</Nav.Link>
+                    <Nav.Link href="/">HOMBRE</Nav.Link>
+                    <Nav.Link href="/">BLOG</Nav.Link>
+                    <Nav.Link href="/">HISTORIA</Nav.Link>
+                    <Nav.Link href="/">TIENDAS</Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
           </div>
         </div>
 

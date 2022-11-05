@@ -1,15 +1,11 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
 import imagen1 from '../assets/img/1.jpg';
 import Item from "./Item";
+import Carousel from 'react-elastic-carousel';
+import Logo from "../assets/img/12.jpg";
+import App from './carousel';
 
 
-const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 },
-  ];
 
 const Body = () => {
   return (
@@ -69,19 +65,7 @@ const Body = () => {
           <div className="col-12">
         
 
-          <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
-      <div className="App">
-        <Carousel breakPoints={breakPoints}>
-          <Item>One</Item>
-          <Item>Two</Item>
-          <Item>Three</Item>
-          <Item>Four</Item>
-          <Item>Five</Item>
-          <Item>Six</Item>
-          <Item>Seven</Item>
-          <Item>Eight</Item>
-        </Carousel>
-      </div>
+        <App />
 
           </div>
         </div>

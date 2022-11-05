@@ -1,29 +1,33 @@
-window.addEventListener('load', function(){
-	new Glider(document.querySelector('.carousel__lista'), {
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: '.carousel__indicadores',
-		arrows: {
-			prev: '.carousel__anterior',
-			next: '.carousel__siguiente'
-		},
-		responsive: [
-			{
-			  // screens greater than >= 775px
-			  breakpoint: 450,
-			  settings: {
-				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: 2,
-				slidesToScroll: 2
-			  }
-			},{
-			  // screens greater than >= 1024px
-			  breakpoint: 800,
-			  settings: {
-				slidesToShow: 4,
-				slidesToScroll: 4
-			  }
-			}
-		]
-	});
-});
+import React, { Component } from 'react';
+import Carousel from 'react-elastic-carousel';
+
+
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+
+class App extends Component {
+  state = {
+    items: [
+      {id: 1, title: 'item #1'},
+      {id: 2, title: 'item #2'},
+      {id: 3, title: 'item #3'},
+      {id: 4, title: 'item #4'},
+      {id: 5, title: 'item #5'}
+    ]
+  }
+
+  render () {
+    const { items } = this.state;
+    return (
+      <Carousel breakPoints={breakPoints}>
+        {items.map(item => <div key={item.id}>{item.title}</div>)}
+      </Carousel>
+    )
+  }
+}
+
+export default App

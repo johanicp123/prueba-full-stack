@@ -3,7 +3,7 @@ import imagen1 from '../assets/img/1.jpg';
 import Item from "./Item";
 import Carousel from 'react-elastic-carousel';
 import Logo from "../assets/img/12.jpg";
-import App from './carousel';
+import Datos from './carousel';
 
 
 
@@ -65,7 +65,7 @@ const Body = () => {
           <div className="col-12">
         
 
-        <App />
+        <Datos />
 
           </div>
         </div>

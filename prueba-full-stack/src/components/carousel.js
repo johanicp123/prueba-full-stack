@@ -1,33 +1,30 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState , Component} from "react"
 import Carousel from 'react-elastic-carousel';
-
+import Zapato from './zapato.json';
 
 const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 },
-  ];
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
+];
 
-class App extends Component {
-  state = {
-    items: [
-      {id: 1, title: 'item #1'},
-      {id: 2, title: 'item #2'},
-      {id: 3, title: 'item #3'},
-      {id: 4, title: 'item #4'},
-      {id: 5, title: 'item #5'}
-    ]
-  }
-
-  render () {
-    const { items } = this.state;
-    return (
-      <Carousel breakPoints={breakPoints}>
-        {items.map(item => <div key={item.id}>{item.title}</div>)}
-      </Carousel>
-    )
-  }
+function App() {
+return(
+    <Carousel breakPoints={breakPoints}>
+    { Zapato && Zapato.map(zapato =>{
+      return(
+      <div key={zapato.id}>
+        <strong>{zapato.nombre}</strong>
+        {zapato.precio}
+      </div>
+      )
+    })}
+  </Carousel>
+)
+  
 }
+ export default App;
 
-export default App
+
+

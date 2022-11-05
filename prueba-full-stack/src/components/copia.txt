@@ -1,0 +1,80 @@
+import React, { Component } from 'react';
+import Carousel from 'react-elastic-carousel';
+
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
+
+class App extends Component {
+  state = {
+    items: [
+      {id: 1, title: 'item #1'},
+      {id: 2, title: 'item #2'},
+      {id: 3, title: 'item #3'},
+      {id: 4, title: 'item #4'},
+      {id: 5, title: 'item #5'}
+    ]
+  }
+
+  render () {
+    const { items } = this.state;
+    return (
+      <Carousel breakPoints={breakPoints}>
+        {items.map(item => <div key={item.id}>{item.title}</div>)}
+      </Carousel>
+    )
+  }
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useEffect, useState , Component} from "react"
+import Carousel from 'react-elastic-carousel';
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
+];
+
+function useDatos() {
+  const [zapatos, setZapatos] = useState([])
+
+  useEffect(() => {
+    fetch("./zapato.json")
+      .then(response => response.json())
+      .then(datos => {
+        setZapatos(datos)
+      })
+  }, [])
+
+  return zapatos
+}
+
+export default function Datos() {
+
+  const zapatos = useDatos()
+  return (
+    <Carousel breakPoints={breakPoints}>
+    {zapatos.map(item =><div key={item.id}>{item.nombre}{item.precio}</div>)}
+  </Carousel>
+
+  )
+}
+
+

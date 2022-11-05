@@ -1,4 +1,15 @@
 import React from "react";
+import { Carousel } from "react-bootstrap";
+import imagen1 from '../assets/img/1.jpg';
+import Item from "./Item";
+
+
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
 
 const Body = () => {
   return (
@@ -51,21 +62,27 @@ const Body = () => {
             <h1>fdfdf</h1>
           </div>
           <div className="col-6 col-md-3">
-            <h2>fdf</h2>
+            <h2>fdf</h2> 
           </div>
         </div>
         <div className="row">
-          <div className="col-6 col-md-3">
-            <h1>fdfdf</h1>
-          </div>
-          <div className="col-6 col-md-3">
-            <h2>fdf</h2>
-          </div>
-          <div className="col-6 col-md-3">
-            <h1>fdfdf</h1>
-          </div>
-          <div className="col-6 col-md-3">
-            <h2>fdf</h2>
+          <div className="col-12">
+        
+
+          <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
+      <div className="App">
+        <Carousel breakPoints={breakPoints}>
+          <Item>One</Item>
+          <Item>Two</Item>
+          <Item>Three</Item>
+          <Item>Four</Item>
+          <Item>Five</Item>
+          <Item>Six</Item>
+          <Item>Seven</Item>
+          <Item>Eight</Item>
+        </Carousel>
+      </div>
+
           </div>
         </div>
       </div>

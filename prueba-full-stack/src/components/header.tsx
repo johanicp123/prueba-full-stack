@@ -90,6 +90,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <hr />
     </>
   );
 };

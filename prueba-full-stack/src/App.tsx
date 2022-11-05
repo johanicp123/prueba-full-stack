@@ -3,25 +3,13 @@ import logo from './logo.svg';
 import './styles/App.css';
 import Header from './components/header';
 import Footer from './components/footer';
+import Body from './components/body';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="/"
-          target=""
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Body />
       <Footer />
     </div>
   );

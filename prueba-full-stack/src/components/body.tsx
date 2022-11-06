@@ -46,30 +46,52 @@ const Body = () => {
             <br />
             <h5>COLOR</h5>
             <img
-                src={imagen1}
-                alt="foto zapato "
-                className="img-fluid img-thumbnail imgcom"
-              />
-              <br />
-              <h5>TALLA</h5>
-              <div>
-              <button type="button" className="btn btn-light mabot">5.5</button>
-              <button type="button" className="btn btn-light mabot">5.5</button>
-              <button type="button" className="btn btn-light mabot">5.5</button>
-              <button type="button" className="btn btn-light mabot">5.5</button>
-              <button type="button" className="btn btn-light mabot">5.5</button>
-              </div>
-              <div>
-              <button type="button" className="btn btn-light mabot">6.5</button>
-              <button type="button" className="btn btn-light mabot">6.5</button>
-              <button type="button" className="btn btn-light mabot">6.5</button>
-              <button type="button" className="btn btn-light mabot">6.5</button>
-              <button type="button" className="btn btn-light mabot">6.5</button>
-              </div>
-              <h5 className="mb-4"><u>Guia de tallas</u></h5>
-              <button type="button" className="btn btnlook mb-2">
-                Agrega al carrito
+              src={imagen1}
+              alt="foto zapato "
+              className="img-fluid img-thumbnail imgcom"
+            />
+            <br />
+            <h5>TALLA</h5>
+            <div>
+              <button type="button" className="btn btn-light mabot">
+                5.5
               </button>
+              <button type="button" className="btn btn-light mabot">
+                5.5
+              </button>
+              <button type="button" className="btn btn-light mabot">
+                5.5
+              </button>
+              <button type="button" className="btn btn-light mabot">
+                5.5
+              </button>
+              <button type="button" className="btn btn-light mabot">
+                5.5
+              </button>
+            </div>
+            <div>
+              <button type="button" className="btn btn-light mabot">
+                6.5
+              </button>
+              <button type="button" className="btn btn-light mabot">
+                6.5
+              </button>
+              <button type="button" className="btn btn-light mabot">
+                6.5
+              </button>
+              <button type="button" className="btn btn-light mabot">
+                6.5
+              </button>
+              <button type="button" className="btn btn-light mabot">
+                6.5
+              </button>
+            </div>
+            <h5 className="mb-4">
+              <u>Guia de tallas</u>
+            </h5>
+            <button type="button" className="btn btnlook mb-2">
+              Agrega al carrito
+            </button>
           </div>
         </div>
         <div className="row">

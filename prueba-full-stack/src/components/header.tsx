@@ -32,10 +32,10 @@ const Header = () => {
             </a>
           </div>
           <div>
-            <Navbar bg="white" expand="md" className=" mt-3 letranav"  >
-              <Container >
+            <Navbar bg="white" expand="md" className=" mt-3 letranav">
+              <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" >
+                <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                     <Nav.Link href="/">MUJER</Nav.Link>
                     <Nav.Link href="/">HOMBRE</Nav.Link>

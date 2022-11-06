@@ -1,191 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Sofia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Sofia&display=swap");
 
-.imgcom{
+.imgcom {
   height: auto;
   max-width: 15%;
   margin-bottom: 1rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
-
-.imgcom1{
+.imgcom1 {
   height: 250px;
   width: auto;
   object-fit: cover;
 }
 
-
-.lemora{
+.lemora {
   color: #7a4a58;
-} 
-
-.mabot{
-margin: 0 1rem 1rem 0;
 }
 
-.btnlook{
+.mabot {
+  margin: 0 1rem 1rem 0;
+}
+
+.btnlook {
   background-color: #7a4a58;
   color: white;
 }
 
-.inputbus{
+.inputbus {
   width: auto;
-margin: 0 5rem 0 15rem;
-padding: 1rem 0 0 0;
+  margin: 0 5rem 0 15rem;
+  padding: 1rem 0 0 0;
 }
 
-.lebody{
-  font-family: 'Playfair Display', serif;
+.lebody {
+  font-family: "Playfair Display", serif;
 }
 
-.justi{
+.justi {
   text-align: justify;
 }
 
-.bglook{
+.bglook {
   background-color: #e7e6e2;
 }
-.logo{
+.logo {
   background-color: #282c34;
   margin: 0.5rem 27.5rem 0 0;
   width: 8rem;
   height: 5rem;
 }
 
-.inst{
+.inst {
   background-color: #e7e6e2;
   color: #868584;
   padding: 1.5rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
-.carritoco{
+.carritoco {
   margin: 0 0 0rem 6rem;
   width: auto;
 }
 
-
-
-
-
-.envgra{
-  color:#7a4a58;
+.envgra {
+  color: #7a4a58;
   margin: 0 0 0 6rem;
   width: auto;
 }
 
-.inst hr{
+.inst hr {
   height: 2px;
-  
 }
 
-.inst svg{
+.inst svg {
   color: #868584;
   margin: 0 auto;
   width: 5rem;
   height: 2.5rem;
 }
 
-.barra1{
+.barra1 {
   width: 8rem;
   margin: 1rem auto;
-  padding: .10rem;
+  padding: 0.1rem;
 }
 
-.imgf{
+.imgf {
   margin: 0 auto;
   width: 100%;
   height: 100%;
 }
 
-.inst svg:hover{
+.inst svg:hover {
   color: black;
 }
 
-.foo{
+.foo {
   text-align: start;
   padding: 1rem;
 }
 
-.foo h5{
+.foo h5 {
   font-weight: 700;
-  padding-bottom: .5rem;
-  font-family: 'Playfair Display', serif;
+  padding-bottom: 0.5rem;
+  font-family: "Playfair Display", serif;
 }
 
-.foo a{
+.foo a {
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
   color: black;
 }
 
-.foo a:hover{
- color: #868584;
+.foo a:hover {
+  color: #868584;
 }
 
-
-.foo ul{
+.foo ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.foo li{
+.foo li {
   text-align: start;
 }
 
-.promo{
+.promo {
   text-align: center;
   background-color: #7a4a58;
-  padding: .5rem;
+  padding: 0.5rem;
   color: white;
 }
 
-.menu1{
+.menu1 {
   text-align: end;
   height: 1.75rem;
   padding-right: 5rem;
   background-color: #c8c6cb;
 }
 
-.menu1 a{
+.menu1 a {
   text-decoration: none;
   color: #818082;
   padding: 2px 3px 7px 3px;
 }
 
-.menu1  a:hover {
+.menu1 a:hover {
   color: white;
   background-color: #707070;
   border-radius: 5px;
 }
 
-.menu1 ul{
+.menu1 ul {
   list-style: none;
 }
 
-.contenedor{
-  display:flex;
+.contenedor {
+  display: flex;
 }
 
-.contenedor1{
+.contenedor1 {
   width: 50%;
 }
 
-.contenedor2{
+.contenedor2 {
   width: 50%;
 }
 
-
-.menu1 li{
+.menu1 li {
   display: inline;
   padding: 0 5px;
 }
 
-
-.letranav{
-  font-family:'Playfair Display', serif;
+.letranav {
+  font-family: "Playfair Display", serif;
 }
 
 .App {
@@ -198,199 +188,183 @@ padding: 1rem 0 0 0;
   pointer-events: none;
 }
 
-
 /* --- --- CAROUSEL --- --- */
 .carousel__contenedor {
-	position: relative;
+  position: relative;
 }
 
 .carousel__anterior,
 .carousel__siguiente {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: #fff;
-	opacity: 20%;
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #fff;
+  opacity: 20%;
 }
 
 .carousel__anterior:hover,
 .carousel__siguiente:hover {
-	opacity: 100%;
+  opacity: 100%;
 }
 
 .carousel__anterior {
-	left: -30px;
+  left: -30px;
 }
 
 .carousel__siguiente {
-	right: -30px;
+  right: -30px;
 }
 
 .carousel__lista {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .carousel__elemento {
-	text-align: center;
+  text-align: center;
 }
 
 .carousel__indicadores .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: #fff;
-	opacity: .2;
-	border-radius: 0;
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  opacity: 0.2;
+  border-radius: 0;
 }
 
 .carousel__indicadores .glider-dot:hover {
-	opacity: .5;
+  opacity: 0.5;
 }
 
 .carousel__indicadores .glider-dot.active {
-	opacity: 1;
+  opacity: 1;
 }
-
 
 @media only screen and (max-width: 600px) {
-  
-.carritologo {
-  margin-bottom: .5rem;
-  color:#707070 ;
-  width: 2rem;
-  height: 2rem;
+  .carritologo {
+    margin-bottom: 0.5rem;
+    color: #707070;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .menu1 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    font-size: 0.7rem;
+  }
+
+  .logo {
+    background-color: #282c34;
+    margin: 1rem 0 0 -45%;
+    padding: 0;
+    width: 5rem;
+    height: 3rem;
+  }
+
+  .inputbus {
+    width: auto;
+    margin: 0;
+    padding: 1rem 1rem 0 0;
+  }
+
+  .envgra {
+    margin: 1rem auto;
+  }
+
+  .envgra h6 {
+    font-size: 0.7rem;
+    padding: 0;
+  }
 }
-  
-.menu1{
-  text-align: center;
-  margin: 0 auto;
-  padding: 5px 0 0 0;
-  font-size: .7rem;
-}
-
-
-.logo{
-  background-color: #282c34;
-  margin: 1rem 0 0 -45%;
-  padding:0;
-  width: 5rem;
-  height: 3rem;
-}
-
-.inputbus{
-  width: auto;
-  margin: 0;
-  padding: 1rem 1rem 0 0;
-}
-
-.envgra{
-  margin: 1rem auto;
-}
-
-.envgra h6{
- font-size: .7rem;
- padding: 0;
-}
-
-
-}
-
 
 @media only screen and (min-width: 600px) {
-  
-.carritologo {
-  margin-left: 35%;
-  margin-bottom: .5rem;
-  color:#707070 ;
-  width: 3rem;
-  height: 2rem;
-}
-  
-.menu1{
-  text-align: center;
-  margin: 0 auto;
-  padding: 5px 0 0 0;
-  font-size: .7rem;
-}
+  .carritologo {
+    margin-left: 35%;
+    margin-bottom: 0.5rem;
+    color: #707070;
+    width: 3rem;
+    height: 2rem;
+  }
 
+  .menu1 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    font-size: 0.7rem;
+  }
 
-.logo{
-  background-color: #282c34;
-  margin: 1.75rem 0 0 -60%;
-  padding:0;
-  width: 6rem;
-  height: 3.5rem;
-}
+  .logo {
+    background-color: #282c34;
+    margin: 1.75rem 0 0 -60%;
+    padding: 0;
+    width: 6rem;
+    height: 3.5rem;
+  }
 
-.inputbus{
-  width: 10rem;
-  margin: 0 0rem 0 45%;
-  padding: 1rem 1rem 0 0;
-}
+  .inputbus {
+    width: 10rem;
+    margin: 0 0rem 0 45%;
+    padding: 1rem 1rem 0 0;
+  }
 
-.envgra{
-  margin: 1rem 0 1rem 45%;
-  width: 10rem;
-}
+  .envgra {
+    margin: 1rem 0 1rem 45%;
+    width: 10rem;
+  }
 
-.envgra h6{
- font-size: .7rem;
- padding: 0;
-}
-
-
-  
+  .envgra h6 {
+    font-size: 0.7rem;
+    padding: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-
   .carritologo {
-  margin-bottom: .5rem;
-  color:#707070 ;
-  width: 2rem;
-  height: 2rem;
-}
-  
-.menu1{
-  text-align: end;
-  margin: 0 auto;
-  padding: 1px 0 0 0;
-  font-size: .8rem;
-}
+    margin-bottom: 0.5rem;
+    color: #707070;
+    width: 2rem;
+    height: 2rem;
+  }
 
+  .menu1 {
+    text-align: end;
+    margin: 0 auto;
+    padding: 1px 0 0 0;
+    font-size: 0.8rem;
+  }
 
-.logo{
-  background-color: #282c34;
-  margin: 1rem 0 0 -55%;
-  padding:0;
-  width: 6rem;
-  height: 4rem;
-}
+  .logo {
+    background-color: #282c34;
+    margin: 1rem 0 0 -55%;
+    padding: 0;
+    width: 6rem;
+    height: 4rem;
+  }
 
-.inputbus{
-  width: 65%;
-  margin: 0 0 0 32%;
-  padding: 1rem 1rem 0 0;
-}
+  .inputbus {
+    width: 65%;
+    margin: 0 0 0 32%;
+    padding: 1rem 1rem 0 0;
+  }
 
-.envgra{
-  width: 50%;
-  margin: .75rem 0 .75rem 40%;
-  padding: 0;
-}
+  .envgra {
+    width: 50%;
+    margin: 0.75rem 0 0.75rem 40%;
+    padding: 0;
+  }
 
-.envgra h6{
- font-size: .8rem;
-
-}
-
+  .envgra h6 {
+    font-size: 0.8rem;
+  }
 }
 /*
 

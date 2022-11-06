@@ -1,11 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Sofia&display=swap');
 
+.imgcom{
+  height: auto;
+  max-width: 15%;
+  margin-bottom: 1rem;
+  margin-right: .5rem;
+}
+
+
+.imgcom1{
+  height: 250px;
+  width: auto;
+  object-fit: cover;
+}
+
+
+.lemora{
+  color: #7a4a58;
+} 
+
+.mabot{
+margin: 0 1rem 1rem 0;
+}
+
+.btnlook{
+  background-color: #7a4a58;
+  color: white;
+}
+
 .inputbus{
   width: auto;
 margin: 0 5rem 0 15rem;
 padding: 1rem 0 0 0;
 }
 
+.lebody{
+  font-family: 'Playfair Display', serif;
+}
+
+.justi{
+  text-align: justify;
+}
+
+.bglook{
+  background-color: #e7e6e2;
+}
 .logo{
   background-color: #282c34;
   margin: 0.5rem 27.5rem 0 0;
@@ -218,6 +257,7 @@ padding: 1rem 0 0 0;
 .carousel__indicadores .glider-dot.active {
 	opacity: 1;
 }
+
 
 @media only screen and (max-width: 600px) {
   

@@ -15,8 +15,15 @@ return(
     { Zapato && Zapato.map(zapato =>{
       return(
       <div key={zapato.id}>
+        <div>
+        <img src={`${process.env.PUBLIC_URL}/img/${zapato.foto}`} alt={zapato.nombre}  className="imgcom1"  />
+        </div>
+        
+        <br />
         <strong>{zapato.nombre}</strong>
+        <br />
         {zapato.precio}
+        <hr />
       </div>
       )
     })}
